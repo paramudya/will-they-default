@@ -19,12 +19,11 @@ expected test proba result from above input: .03851019963622093
 
 expected output format:
 {
-                'model':'credit-risk-scorer-dari-modul-agustiar',
-                'risky':False,
-                'score_proba':.03851019963622093,
-                'version': '1.0.Ordinal-punya-sendiri',
-
-            }
+ 'model':'credit-risk-scorer-dari-modul-agustiar',
+ 'risky':False,
+ 'score_proba':.03851019963622093,
+ 'version': '1.0.Ordinal-punya-sendiri',
+}
 
 http to access(?):
 http://127.0.0.1:5000/predict
