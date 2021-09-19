@@ -1,6 +1,5 @@
-<pre> 
 input format:
-
+<pre> 
  {
    "person_age": 26, \n
   "person_income": 48000,
@@ -14,19 +13,21 @@ input format:
   "cb_person_default_on_file": "N",
   "cb_person_cred_hist_length": 3
  }
- 
+ </pre> 
+
 expected test proba result from above input: .03851019963622093
 
 
 expected output format:
+<pre> 
 {
  'model':'credit-risk-scorer-dari-modul-agustiar',
  'risky':False,
  'score_proba':.03851019963622093,
  'version': '1.0.Ordinal-punya-sendiri',
 }
+ </pre> 
 
 http to access(?):
 http://127.0.0.1:5000/predict
 with method POST
-</pre> 
