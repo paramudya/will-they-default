@@ -1,7 +1,8 @@
+<pre> 
 input format:
 
  {
-   "person_age": 26,
+   "person_age": 26, \n
   "person_income": 48000,
   "person_home_ownership": "RENT",
   "person_emp_length": 2.0,
@@ -28,3 +29,4 @@ expected output format:
 http to access(?):
 http://127.0.0.1:5000/predict
 with method POST
+</pre> 
