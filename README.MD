@@ -1,7 +1,7 @@
 input format:
 
  {
-     "person_age": 26,
+   "person_age": 26,
   "person_income": 48000,
   "person_home_ownership": "RENT",
   "person_emp_length": 2.0,
