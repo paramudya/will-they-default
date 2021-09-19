@@ -1,37 +1,43 @@
-from flask import Flask, jsonify, json, request
-from logging import debug
-import pickle
+from flask import Flask, request, jsonify, render_template
 from flask_cors import CORS # library for handling cross origin resources sharing.
-from predict import predict_data
+from predict import make_predictions, preprocess_input
 
-# def new_app():
-app = Flask(__name__)
-CORS(app)
 
-@app.route('/', methods=['GET'])
-def hello():
-    return "HELLO WORLD"
+def create_app():
+    """ app factories """
+    app = Flask(__name__)
+    CORS(app)
 
-@app.route("/predict", methods=['POST'])
-def do_predict():
-    if request.method == 'POST':
-        data_input = request.get_json()
-        print('Input data:\n',data_input,'\nwith type:',type(data_input))
-        result = predict_data(data_input)
-        
-        threshold = 0.5
-        risk = True if result >= threshold else False
-        
-        result_dict = {
-            'model':'credit-risk-scorer-dari-modul-agustiar',
-            'risky':risk,
-            'score_proba':float(result[0]),
-            'version': '1.0.Ordinal-punya-sendiri',
 
-        }
-        print('Proba of risk: ',result)
-    return jsonify(result_dict)
-    # return app
+    @app.route("/", methods=["GET"])
+    def default():
+        return render_template("index.html")
 
-if __name__ == '__main__':
-    app.run(port=5000, debug=False)
+
+    @app.route('/predict', methods=['POST'])
+    def predict():
+        if request.method == 'POST':
+            data_input = request.get_json()["data"]
+            data = {}
+
+            data["Age"] = data_input.get("Age")
+            data["Sex"] = data_input.get("Sex")
+            data["Job"] = data_input.get("Job")
+            data["Housing"] = data_input.get("Housing")
+            data["Saving accounts"] = data_input.get("saving_account")
+            data["Checking account"] = data_input.get("checking_account")
+            data["Credit amount"] = data_input.get("credit_amount")
+            data["Duration"] = data_input.get("duration")
+            data["Purpose"] = data_input.get("purpose")
+
+
+            result = make_predictions(data)
+            
+            result = {
+                "model_version": "german_credit_1.0.0",
+                "api_version": "v1",
+                "result": str(round(list(result)[0], 3))
+            }
+            
+        return jsonify(result)
+    return app
