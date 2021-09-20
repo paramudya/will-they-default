@@ -20,7 +20,7 @@ input format:
 expected test proba result from above input: .004475969355553389
 
 expected output format:
-```json
+```bash
 {
  'model':'credit-risk-scorer-dari-modul-agustiar',
  'risky':False,
