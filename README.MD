@@ -22,10 +22,10 @@ expected test proba result from above input: .004475969355553389
 expected output format:
 ```bash
 {
- 'model':'credit-risk-scorer-dari-modul-agustiar',
- 'risky':False,
- 'score_proba':.004475969355553389,
- 'version': '1.0.Ordinal-punya-sendiri',
+    "model": "credit-risk-predictor",
+    "risky": false,
+    "score_proba": 0.009186364710330963,
+    "version": "0.4.6"
 }
 ```
 
