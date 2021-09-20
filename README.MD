@@ -29,9 +29,9 @@ expected output format:
 }
 ```
 
-to launch:
+to launch (use **test_app**, not app):
 ```bash
-py app.py
+py test_app.py
 ```
 
 and the http to access:
