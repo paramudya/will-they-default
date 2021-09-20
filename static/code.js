@@ -1,4 +1,4 @@
-var Age_ ,Sex_, Job_, Housing_, saving_account_, checking_account_, credit_amount_, duration_, purpose_;
+var person_age_ ,person_income_, person_home_ownership_, person_emp_length_, loan_intent_, loan_grade_, loan_amnt_, loan_int_rate_, loan_percent_income_,cb_person_default_on_file_,cb_person_cred_hist_length_;
 
 $(document).ready(function(){
   // fetch all DOM elements for the input
@@ -30,7 +30,7 @@ $(document).on('click','.button',function(e){
     var cb_person_cred_hist_length = cb_person_cred_hist_length_.value;
 
 
-    if(Age == ""){
+    if(person_age == ""){
       // you may allow it as per your model needs
       // you may mark some fields with * (star) and make sure they aren't empty here
       alert("empty fields not allowed");
