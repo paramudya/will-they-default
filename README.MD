@@ -1,8 +1,8 @@
 Here the source codes and all the dependencies that enable the heroku app that does the prediction of whether a potential creditor would default based on these values stored on input format below. 
 
 input format:
-<pre> 
- {
+```json
+{
    "person_age": 30,
   "person_income": 82000,
   "person_home_ownership": "MORTGAGE",
@@ -15,7 +15,7 @@ input format:
   "cb_person_default_on_file": "N",
   "cb_person_cred_hist_length": 8
  }
- </pre> 
+```
 
 expected test proba result from above input: .004475969355553389
 
