@@ -39,6 +39,7 @@ and the http to access:
 ```POST```
 
 The expected accuracy of the model is as follows:
-![Alt text](development/model_accuracy.jpg?raw=true "Model Accuracy on New Data")
+|AUC|accuracy|precision|recall|
+|123|23|2|2|123|
 
 A lot of what was done and written here is thanks to Mas Agustiar (for the supervised learning materials/tricks/dataset) and especially to Mas Mamduh @mamduhmahfudzi: materials and ideas he shared, the exercise he is assigning--the one I am doing right now, AND his repository that makes this API and app possible: https://github.com/mamduhmahfudzi/credit-scorer.
