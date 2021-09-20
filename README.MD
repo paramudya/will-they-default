@@ -17,7 +17,7 @@ input format:
  }
 ```
 
-expected test proba result from above input: .004475969355553389
+expected test proba result from above input: .009186364710330963
 
 expected output format:
 ```bash
