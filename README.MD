@@ -1,3 +1,5 @@
+Here is the source codes and all its dependencies that enable the heroku app that does the prediction of whether a potential creditor would default based on these values stored on input format below. 
+
 input format:
 <pre> 
  {
@@ -28,6 +30,8 @@ expected output format:
 }
  </pre> 
 
-http to access(?):
+http to access (do launch on test_app.py):
 - http://127.0.0.1:5000/predict
-with method POST
+with the method POST
+
+A lot of what was done and written here is thanks to Mas Agustiar (for the supervised learning materials/tricks/dataset) and especially to Mas Mamduh @mamduhmahfudzi: materials and ideas he shared, the exercise he is assigning--the one I am doing right now, AND his repository that makes this API and app possible: https://github.com/mamduhmahfudzi/credit-scorer.
