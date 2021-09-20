@@ -45,5 +45,21 @@ AUC | accuracy | precision | recall
 ------|-------------|-------|---------
 0.928285 | 0.864063 | 0.908163 | 0.749474 
 
+**missing values handling**
 
-A lot of what was done and written here is thanks to Mas Agustiar (for the supervised learning materials/tricks/dataset) and especially to Mas Mamduh @mamduhmahfudzi: materials and ideas he shared, the exercise he is assigning--the one I am doing right now, AND his repository that makes this API and app possible: https://github.com/mamduhmahfudzi/credit-scorer.
+Each category of the columns are handling this problem uniquely:
+- Categorical columns **do not explicitly handle** it because it was actually already handle by the brilliant feature 'handle_unknown' offered by sklearn's OneHotEncoder and setting it to 'ignore': new values that weren't seen on train set will just not be assigned to any of the dummy columns of the feature (all 0s).
+- Numerical columns handle it with **'median'** method as usual.
+- Ordinal columns replace the missing values with **'mean'**, because the distribution of ordinal values are sometimes far from Gaussian; and when the first number already represents more than half of the data, then the value will be set to its first number, not counting at all the values on the other extreme that might also contribute. The 'mean' method seems fairer for this case (and other more usual cases too).
+
+**outliers handling**
+
+Only done on the numerical columns.
+
+As explained below that the model is doing better when no data is eliminated, no outlier handling is done in the development/training process. 
+
+The outliers are very loosely handled as the limit for the new data to be considered as outlier would be +- 1 * IQR of the maximum and minimum value of the column as found on the training set. The function is created from scratch utilizing TransformerMixin (check outlie.py)
+
+**credits**
+
+A lot of what was done and written here is thanks to Mas Mamduh @mamduhmahfudzi and the main reason this app/API is even here: https://github.com/mamduhmahfudzi/credit-scorer.
