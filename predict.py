@@ -42,10 +42,4 @@ def preprocess_data(raw_input):
 def predict_data(data):
     result = model.predict_proba(preprocess_data(formating_data(data)))[:,1]
     return result
-    
-if __name__ == "__main__":
-    predicted=predict_data(raw_input)
-
-    print(type(predicted))
-    print(predicted)
-    # assert score_proba == result
+   
