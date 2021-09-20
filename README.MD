@@ -41,13 +41,9 @@ and the http to access:
 The expected accuracy of the model is as follows:
 
 
-Fields | Description | Data Type | Example Value | Null Allowed
-------|-------------|-------|---------|---------
-age | Age | Integer | 22 | Yes
-income | Annual Income | Integer | 6000 | Yes
+AUC | accuracy | precision Type | recall 
+------|-------------|-------|---------
+12 | 23 | 12 | 22 
 
-AUC|	accuracy|	precision| recall
- --- | --- | --- |
-123| 23| 2| 2| 123
 
 A lot of what was done and written here is thanks to Mas Agustiar (for the supervised learning materials/tricks/dataset) and especially to Mas Mamduh @mamduhmahfudzi: materials and ideas he shared, the exercise he is assigning--the one I am doing right now, AND his repository that makes this API and app possible: https://github.com/mamduhmahfudzi/credit-scorer.
