@@ -29,7 +29,11 @@ expected output format:
 }
  </pre> 
 
-http to access (do launch on test_app.py):
+http to access (do launch this:
+```bash
+python app.py
+```
+):
 - http://127.0.0.1:5000/predict
 with the method POST
 
