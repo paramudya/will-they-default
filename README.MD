@@ -1,4 +1,4 @@
-Here is the source codes and all the dependencies that enable the heroku app that does the prediction of whether a potential creditor would default based on these values stored on input format below. 
+Here the source codes and all the dependencies that enable the heroku app that does the prediction of whether a potential creditor would default based on these values stored on input format below. 
 
 input format:
 <pre> 
