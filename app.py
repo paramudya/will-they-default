@@ -10,7 +10,7 @@ def new_app():
 
     @app.route("/", methods=['GET'])
     def hello():
-        return "HELLO WORLD"
+        return render_template("index.html")
 
     @app.route("/predict", methods=['POST'])
     def opredict():
