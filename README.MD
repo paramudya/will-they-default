@@ -36,7 +36,7 @@ py app.py
 
 and the http to access:
 - http://127.0.0.1:5000/predict
-with the method POST
+```POST```
 
 The expected accuracy of the model is as follows:
 ![Alt text](development/model_accuracy.jpg?raw=true "Model Accuracy on New Data")
