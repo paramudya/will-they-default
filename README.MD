@@ -3,7 +3,7 @@ Here the source codes and all the dependencies that enable the heroku app that d
 input format:
 ```json
 {
-   "person_age": 30,
+  "person_age": 30,
   "person_income": 82000,
   "person_home_ownership": "MORTGAGE",
   "person_emp_length": 5.0,
@@ -20,14 +20,14 @@ input format:
 expected test proba result from above input: .004475969355553389
 
 expected output format:
-<pre> 
+```json
 {
  'model':'credit-risk-scorer-dari-modul-agustiar',
  'risky':False,
  'score_proba':.004475969355553389,
  'version': '1.0.Ordinal-punya-sendiri',
 }
- </pre> 
+```
 
 to launch:
 ```bash
