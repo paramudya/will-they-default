@@ -13,7 +13,7 @@ def new_app():
         return render_template("index.html")
 
     @app.route("/predict", methods=['POST'])
-    def opredict():
+    def predict():
         if request.method == 'POST':
             data_input = request.get_json()
             print('Input data:\n',data_input,'\nwith type:',type(data_input))
