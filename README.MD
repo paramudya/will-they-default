@@ -34,4 +34,7 @@ http to access (do launch on test_app.py):
 - http://127.0.0.1:5000/predict
 with the method POST
 
+The expected accuracy of the model is as follows:
+![Alt text](development/model_accuracy.jpg?raw=true "Model Accuracy on New Data")
+
 A lot of what was done and written here is thanks to Mas Agustiar (for the supervised learning materials/tricks/dataset) and especially to Mas Mamduh @mamduhmahfudzi: materials and ideas he shared, the exercise he is assigning--the one I am doing right now, AND his repository that makes this API and app possible: https://github.com/mamduhmahfudzi/credit-scorer.
