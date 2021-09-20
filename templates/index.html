@@ -8,7 +8,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="../static/css/style.css">
     <script src="static/code.js"></script>
-    <title>german credit scoring</title>
+    <title>will they?</title>
   </head>
   <body>
     <br>
@@ -16,9 +16,9 @@
     <br>
     <div class="container main">
   <div class="jumbotron" id="holder">
-    <h1 class='main_heading'>Credit Scoring Calculator</h1>
+    <h1 class='main_heading'>Credit Risk Predictor</h1>
     <br>
-    <h3>Check Your Credit Score</h3>
+    <h3>Here are the forms to fill for potential creditor:</h3>
     <br>
     <!-- START OF FORM -->
     
@@ -87,13 +87,12 @@
             <option value="G">G</option>
           </select>
         </div>
-      </div>
-      
+
       <form class="form-horizontal">
         <div class="form-group">
           <label class="control-label col-sm-2"  for="loan_int_rate">loan_int_rate</label>
           <div class="col-sm-10">
-            <input  type="number" class="form-control" id="loan_int_rate" name="loan_int_rate" placeholder="Enter age" onkeydown="return event.key != 'Enter';">
+            <input  type="number" step=0.01 class="form-control" id="loan_int_rate" name="loan_int_rate" placeholder="Enter age" onkeydown="return event.key != 'Enter';">
           </div>
         </div> 
          <!-- 5 sampe 24 -->
@@ -102,7 +101,7 @@
         <div class="form-group">
             <label class="control-label col-sm-2"  for="loan_percent_income">loan_percent_income</label>
             <div class="col-sm-10">
-            <input  type="number" class="form-control" id="loan_percent_income" name="loan_percent_income" placeholder="Enter age" onkeydown="return event.key != 'Enter';">
+            <input  type="number" step=0.01 class="form-control" id="loan_percent_income" name="loan_percent_income" placeholder="Enter age" onkeydown="return event.key != 'Enter';">
             </div>
         </div> 
          <!-- 0 sampe 1 atau lebih bisa sih kalo dia loan nya ngelebihin -->
@@ -120,7 +119,7 @@
 
       <form class="form-horizontal">
         <div class="form-group">
-          <label class="control-label col-sm-2"  for="cb_person_cred_hist_length">cb_person_cred_hist_length</label>
+          <label class="control-label col-sm-2"  for="cb_person_cred_hist_length">Person Credit History CB</label>
           <div class="col-sm-10">
             <input  type="number" class="form-control" id="cb_person_cred_hist_length" name="cb_person_cred_hist_length" placeholder="Enter age" onkeydown="return event.key != 'Enter';">
           </div>
@@ -130,13 +129,22 @@
 
       <div class="form-group">
         <div class="col-sm-offset-2 col-sm-10">
-          <button type="submit" class="button btn btn-default">Submit</button>
+          <button type="submit" class="button btn btn-default">Let me know!</button>
         </div>
       </div>
     </form>
     <h2 class="result"></h2>
   </div>
 </div>
+
+</div>
+<form class="form-horizontal">
+  <div class="form-group">
+    <label class="control-label col-sm-2"  for="loan_amount">loan amount</label>
+    <div class="col-sm-10">
+      <input  type="number" step=1 class="form-control" id="loan_amount" name="loan_amount" placeholder="How mucn to borrow?" onkeydown="return event.key != 'Enter';">
+    </div>
+  </div> 
 
 <!-- Footer -->
 <footer class="page-footer font-small blue">
