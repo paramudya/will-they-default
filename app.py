@@ -1,4 +1,4 @@
-from flask import Flask, jsonify, json, request
+from flask import Flask, jsonify, json, request, render_template
 from logging import debug
 import pickle
 from flask_cors import CORS # library for handling cross origin resources sharing.
