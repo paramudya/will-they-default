@@ -41,7 +41,7 @@ and the http to access:
 The expected accuracy of the model is as follows:
 
 
-AUC | accuracy | precision Type | recall 
+AUC | accuracy | precision | recall 
 ------|-------------|-------|---------
 0.928285 | 0.864063 | 0.908163 | 0.749474 
 
