@@ -43,7 +43,7 @@ The expected accuracy of the model is as follows:
 
 AUC | accuracy | precision | recall 
 ------|-------------|-------|---------
-0.928285 | 0.864063 | 0.908163 | 0.749474 
+0.0.93137 | 0.864023 | 0.929825 | 0.74386
 
 **missing values handling**
 
