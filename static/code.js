@@ -30,7 +30,7 @@ $(document).on('click','.button',function(e){
     var cb_person_cred_hist_length = cb_person_cred_hist_length_.value;
 
 
-    if(person_age == ""){
+    if(person_age == "2"){
       // you may allow it as per your model needs
       // you may mark some fields with * (star) and make sure they aren't empty here
       alert("empty fields not allowed");
