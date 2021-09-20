@@ -29,7 +29,6 @@ $(document).on('click','.button',function(e){
     var cb_person_default_on_file = cb_person_default_on_file_.value;
     var cb_person_cred_hist_length = cb_person_cred_hist_length_.value;
 
-
     if(person_age == "2"){
       // you may allow it as per your model needs
       // you may mark some fields with * (star) and make sure they aren't empty here
@@ -75,7 +74,7 @@ $(document).on('click','.button',function(e){
         type: 'POST',
         success: function(response){
             // console.log(response);
-            prediction = response['result'];
+            prediction = response['score_proba'];
             $(".result").html("Prediction is: "+prediction);
             $(".result").css({
               "color": "#666666",
