@@ -3,29 +3,28 @@ Here is the source codes and all the dependencies that enable the heroku app tha
 input format:
 <pre> 
  {
-   "person_age": 26,
-  "person_income": 48000,
-  "person_home_ownership": "RENT",
-  "person_emp_length": 2.0,
-  "loan_intent": "MEDICAL",
-  "loan_grade": "B",
-  "loan_amnt": 10000,
-  "loan_int_rate": 12.21,
-  "loan_percent_income": 0.21,
+   "person_age": 30,
+  "person_income": 82000,
+  "person_home_ownership": "MORTGAGE",
+  "person_emp_length": 5.0,
+  "loan_intent": "PERSONAL",
+  "loan_grade": "A",
+  "loan_amnt": 5000,
+  "loan_int_rate": 6.76,
+  "loan_percent_income": 0.06,
   "cb_person_default_on_file": "N",
-  "cb_person_cred_hist_length": 3
+  "cb_person_cred_hist_length": 8
  }
  </pre> 
 
-expected test proba result from above input: .03851019963622093
-
+expected test proba result from above input: .004475969355553389
 
 expected output format:
 <pre> 
 {
  'model':'credit-risk-scorer-dari-modul-agustiar',
  'risky':False,
- 'score_proba':.03851019963622093,
+ 'score_proba':.004475969355553389,
  'version': '1.0.Ordinal-punya-sendiri',
 }
  </pre> 
