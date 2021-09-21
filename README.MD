@@ -54,9 +54,7 @@ Each category of the columns are handling this problem uniquely:
 
 **outliers handling**
 
-Only done on the numerical columns.
-
-As explained below that the model is doing better when no data is eliminated, no outlier handling is done in the development/training process. 
+Only done on the numerical columns and no outlier handling is done in the development/training process, only on the inputted data daruing prediction--because during development (see development_notebook.ipynb) it was shown that eliminating potential outliers reduces the predictive power of the model.
 
 The outliers are very loosely handled as the limit for the new data to be considered as outlier would be +- 1 * IQR of the maximum and minimum value of the column as found on the training set. The function is created from scratch utilizing TransformerMixin (check outlie.py)
 
