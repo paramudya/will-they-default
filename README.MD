@@ -1,6 +1,6 @@
 Here the source codes and all the dependencies that enable the heroku app that does the prediction of whether a potential creditor would default based on these values stored on input format below. 
 
-input format:
+**input format**:
 ```json
 {
   "person_age": 30,
@@ -19,7 +19,7 @@ input format:
 
 expected test proba result from above input: .009186364710330963
 
-expected output format:
+**expected output format**:
 ```bash
 {
     "model": "credit-risk-predictor",
@@ -29,12 +29,12 @@ expected output format:
 }
 ```
 
-to launch:
+to **launch**:
 ```bash
 python app.py
 ```
 
-and the http to access:
+and the **http** to access:
 - http://127.0.0.1:5000/predict
 ```POST```
 
