@@ -31,8 +31,9 @@ expected test proba result from above input: .009186364710330963
 
 to **launch**:
 ```bash
-python app.py
+python test_app.py
 ```
+notice it is **test_app**.py and not the usual app.py.
 
 and the **http** to access:
 - http://127.0.0.1:5000/predict
