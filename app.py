@@ -8,9 +8,9 @@ def new_app():
     app = Flask(__name__)
     CORS(app)
 
-    @app.route("/", methods=["GET"])
-    def default():
-        return render_template("index.html") #kurang ini?
+#     @app.route("/", methods=["GET"])
+#     def default():
+#         return render_template("index.html") #kurang ini?
 
     @app.route("/predict", methods=['POST'])
     def predict():
