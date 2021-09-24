@@ -20,7 +20,7 @@
     background-position: center; /* Center the image */
     background-size: cover; 
     /* background: -webkit-linear-gradient(to right, #6E48AA, #9D50BB);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #ec1236, #dd1a00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ */
+    background: linear-gradient(to right, #ffffff, #e8f6ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ */
   
   }
   
@@ -86,6 +86,9 @@
   
   .jumbotron{
     margin-top:0;
+    background: linear-gradient(to left, #e8f6ff, #f1f1f3);
+    margin-left: auto;
+    margin-right: auto;
   }
 
   input {
