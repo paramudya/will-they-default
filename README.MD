@@ -46,6 +46,9 @@ AUC | accuracy | precision | recall
 ------|-------------|-------|---------
 0.0.93137 | 0.864023 | 0.929825 | 0.74386
 
+### preprocessing pipeling
+I utilized the sklearn's readily available libs, SimpleImputer and OneHotEncoder, and my custom made function (with the help of sklearn's TransformerMixin) named Outlie and Ordinal respectively to correct the potential outliers detected in **input** data and do the mapping of ordinal column with a predefined ranking dictionary.
+
 **missing values handling**
 
 Each category of the columns are handling this problem uniquely:
