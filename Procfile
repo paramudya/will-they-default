@@ -1,1 +1,1 @@
-web: gunicorn "app:new_app()"
+web: gunicorn "app:app"
