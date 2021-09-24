@@ -29,14 +29,14 @@ expected test proba result from above input: .009186364710330963
 }
 ```
 
-to **launch**:
+to **test** the endpoint API:
 ```bash
 python test_app.py
 ```
-notice it is **test_app**.py and not the usual app.py.
+notice it is **test_app**.py and not the usual app.py; I had to separate the JavaScript code as this one directs to a local host (and the other to heroku server).
 
 and the **http** to access:
-- http://127.0.0.1:5000/predict
+- http://127.0.0.1:5000/
 ```POST```
 
 The expected accuracy of the model is as follows:
