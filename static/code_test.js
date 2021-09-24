@@ -67,7 +67,7 @@ $(document).on('click','.button',function(e){
       // # https://api.jquery.com/jquery.post/
       // # https://stackoverflow.com/questions/56032972/sending-a-dictionary-from-js-to-flask-via-ajax
       $.ajax({
-        url: 'http://127.0.0.1:5000/predict',
+        url: 'http://localhost:5000/predict',
         contentType: "application/json;charset=utf-8",
         data: JSON.stringify({data}),
         dataType: "json",
